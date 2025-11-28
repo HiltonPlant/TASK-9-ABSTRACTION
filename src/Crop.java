@@ -9,4 +9,9 @@ abstract class Crop {
         this.growthDuration = growthDuration;
     }
 
+    public abstract void displayDetails();
+
+    public double computeYield(double fertilizerKg) {
+        return fertilizerKg * 2.5;
+    }
 }
